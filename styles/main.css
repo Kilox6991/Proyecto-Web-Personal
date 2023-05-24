@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(2, 84, 100);
+}
+
+.resumen {
+    background-color: rgb(229, 124, 35);
+}
+
+nav {
+    background-color: rgb(232, 170, 66);
+}
+
+footer {
+    background-color: rgb(248,241,241);
+}
+
+button {
+   border: 0;
+   background-image: linear-gradient(
+    150deg,
+    #9500ff,
+    #09f,
+    #00DDFF
+   );
+   border-radius: 8px;
+   color: #fff;
+   display: flex;
+   font-size: 18px;
+   padding: 4px;
+   cursor: pointer;
+   transition: .3s;
+
+}
+button.span{
+    background-color: #111;
+    padding: 16px 24px;
+    border: 6px;
+    transition: .3s;
+}
+
+button:hover.span {
+    background: none;
+
+}
+
+button:active {
+   transform: scale(0.9); 
+}
