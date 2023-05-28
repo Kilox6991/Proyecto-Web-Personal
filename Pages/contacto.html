@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Pagina de contacto</h1>
-</body>
+    <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <button>
+              <a href="/index.html">Home</a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button>
+              <a href="porfolio.html">Porfolio</a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button>
+              <a href="biografia.html">Biografia</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <h1>Pagina de contacto</h1>
+    </header>
+    <main>
+      <!--Al menos debo incluir un formulario-->
+      <form action="">
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="apellido">Apellidos</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="edad">Edad</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="motivo">Motivo del contacto</label>
+            <select name="motivo" id="motivo">
+              <optgroup label="Laboral">
+                <option value="laboral">Entrega de CV</option>
+                <option value="laboral">Colaboracion en proyecto</option>
+                <option value="laboral">Entrevista de trabajo</option>
+              </optgroup>
+              <optgroup label="Personal">
+                <option value="montaña">Cervezas</option>
+                <option value="montaña">Salir de fiesta</option>
+                <option value="montaña">Comida</option>
+              </optgroup>
+              <optgroup label="Planes">
+                <option value="carreras">Playa</option>
+                <option value="carreras">
+                  Montaña
+                </option>
+                <option value="carreras">Deporte</option>
+              </optgroup>
+            </select>
+          </div>
+          <div>
+            <textarea name="sobre-ti" rows="8" cols="20" placeholder="¿Quieres escribir mas sobre tu consulta?"></textarea>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
 </html>
