@@ -1,67 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manuel Romero</title>
-    <link
-      rel="shortcut icon"
-      href="/img/favicon-16x16.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="/styles/prueba.css" />
+    <title>Web Manuel Romero</title>
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <header class="estructura">
-      <div>
+    <header class="container">
+      <h2 class="logo">MRA</h2>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="pages/biografia.html">Biografia</a>
+        <a href="pages/portfolio.html">Portfolio</a>
+        <a href="pages/contacto.html">Contacto</a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="banner flexContainer">
         <a
           href="https://www.linkedin.com/in/manuel-romero-arroyo-320b7220a/"
           target="_blank"
         >
-          <img
-            src="_img\fotoweb.jpg"
-            alt="Manuel Romero"
-            class="imglanding"
+          <img src="img\fotoweb.jpg" alt="Manuel Romero" class="imglanding"
         /></a>
-        <h1>Manuel Romero Arroyo</h1>
-        <h2>
+        <h1 class="nombre-home">Manuel Romero Arroyo</h1>
+        <h2 class="nombre-home">
           Politologo, Gestor Administrativo y en proceso de desarrollador web
         </h2>
-      </div>
-    </header>
-    <main class="estructura">
-      <section class="resumen">
-        <p class="planding">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quae
-          repellendus totam, vel alias minima error obcaecati voluptates laborum
-          ab corrupti nobis earum laudantium voluptatem nihil ex. Sit, quaerat
-          veniam.
+      </section>
+      <section class="resumen-home flexContainer">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+          corporis rem officia provident non aspernatur sit cum dolores rerum
+          natus tenetur ex sapiente reiciendis consectetur commodi, mollitia
+          itaque vero qui!
         </p>
       </section>
-
-      <!-- Segunda section para poner el menu para las otras paginas-->
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <button>
-              <a href="Pages\biografia.html">Biografia</a>
-            </button>
-          </li>
-          <li class="nav-item">
-            <button>
-              <a href="Pages\porfolio.html">Porfolio</a>
-            </button>
-          </li>
-          <li class="nav-item">
-            <button>
-              <a href="Pages\contacto.html">Contacto</a>
-            </button>
-          </li>
-        </ul>
-      </nav>
     </main>
-
-    <footer clas="estructura"></footer>
+    <footer class="container">
+      <ul>
+        <a href="">Linkedin</a>
+        <a href="">Facebook</a>
+        <a href="">Youtube</a>
+      </ul>
+      <p class="ubicacion-footer">Ubicacion</p>
+    </footer>
   </body>
 </html>

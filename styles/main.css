@@ -1,68 +1,113 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header {
-    background-color: blue;
-    width: 100%;
-    max-width: 70rem;
-}
-
-div {
-    width: 80%;
-    background-color: brown;
+/*HEADER*/
+header{
+    height: 100px;
+    background-color: grey;
+    padding: 0 50px;
+    color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: aquamarine;
+    font-weight: 200;
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.menu a:hover{
+    color:aquamarine ;
+}
+
+/*MAIN*/
+
+section.banner {
+    display: flex;
     flex-direction: column;
-    margin: 10%;
-    
+    text-align: center;
+    padding: 15px 0;
 }
-
-h1 {
-    background-color: chartreuse;
-}
-
-h2{
-    background-color: chartreuse;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10%;
-}
-
-
-img{
-    background-color: chartreuse;
+.imglanding{
     border-radius: 50%;
+    border: 1px solid black;
 }
-.resumen {
-    background-color: aquamarine;
-    max-width: 70rem;
-}
-
-p.planding{
-    background-color: rgb(225, 137, 14);
+.resumen-home{
     display: flex;
     text-align: center;
-    min-height: 1rem;
-    padding-left: 10%;
-    padding-right: 10%;
+}
+.nombre-home{
+    padding: 20px 0;
+}
+.main-portfolio{
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.caja-portfolio{
+    padding: 10px 0;
+    border: 2px solid black;
 }
 
-
-main {
-    max-width: 70rem;
-
-}
-
+/*FOOTER*/
 footer{
-    max-width: 70rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+footer a{
+    text-decoration: none;
+    padding: 10px
 }
 
 
-.imglanding {
-    border-radius: 50%;
+
+
+/* RESPONSIVE*/
+@media(min-width: 768px){
+    .main-portfolio{
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+    .caja-portfolio{
+        width: calc(40% - 10px) ;
+        margin: 10px;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+
+    }
 }
+
+/*Pantalla grande*/
+/*--Pantalla grande --*/
+
+@media screen and (min-width: 992px) {
+    header.container,main.container, footer {
+        width: 80%;
+        margin: 0 auto;
+}
+}
+
