@@ -1,75 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto MRA</title>
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Manuel Romero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Slackside+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
     <header class="container">
-        <h2 class="logo">MRA</h2>
-        <nav class="menu">
-            <a href="../index.html">Home</a>
-            <a href="biografia.html">Biografia</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-      </header>
-      <main class="container">
-        <form action="">
-            <fieldset>
-              <legend>Datos Personales</legend>
-              <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" required />
-              </div>
-              <div>
-                <label for="apellido">Apellidos</label>
-                <input type="text" />
-              </div>
-              <div>
-                <label for="edad">Edad</label>
-                <input type="number" />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input type="text" />
-              </div>
-              <div>
-                <label for="motivo">Motivo del contacto</label>
-                <select name="motivo" id="motivo">
-                  <optgroup label="Laboral">
-                    <option value="laboral">Entrega de CV</option>
-                    <option value="laboral">Colaboracion en proyecto</option>
-                    <option value="laboral">Entrevista de trabajo</option>
-                  </optgroup>
-                  <optgroup label="Personal">
-                    <option value="montaña">Cervezas</option>
-                    <option value="montaña">Salir de fiesta</option>
-                    <option value="montaña">Comida</option>
-                  </optgroup>
-                  <optgroup label="Planes">
-                    <option value="carreras">Playa</option>
-                    <option value="carreras">
-                      Montaña
-                    </option>
-                    <option value="carreras">Deporte</option>
-                  </optgroup>
-                </select>
-              </div>
-              <div>
-                <textarea name="sobre-ti" rows="8" cols="20" placeholder="¿Quieres escribir mas sobre tu consulta?"></textarea>
-              </div>
-            </fieldset>
-          </form>
-      </main>
-      <footer>
-        <a href="https://www.linkedin.com/in/manuel-romero-arroyo-320b7220a/">Linkedin</a>
-        <a href="">Facebook</a>
-        <a href="">Youtube</a>
-        <p class="ubicacion-footer">Ubicacion </p>
+      <h2 class="logo">MRA</h2>
+      <nav class="menu">
+        <a href="../index.html">Home</a>
+        <a href="biografia.html">Biografia</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+    <main class="container">
+      <form action="" class="formulario">
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <div class="div-contacto">
+            <label for="nombre">Nombre</label>
+            <input type="text" />
+          </div>
+          <div class="div-contacto">
+            <label for="apellido">Apellidos</label>
+            <input type="text" />
+          </div>
+          <div class="div-contacto">
+            <label for="edad">Edad</label>
+            <input type="number" />
+          </div>
+          <div class="div-contacto">
+            <label for="email">Email</label>
+            <input type="text" />
+          </div>
+          <div class="div-contacto">
+            <label for="motivo">Motivo del contacto</label>
+            <select name="motivo" id="motivo">
+              <optgroup label="Laboral">
+                <option value="laboral">Entrega de CV</option>
+                <option value="laboral">Colaboracion en proyecto</option>
+                <option value="laboral">Entrevista de trabajo</option>
+              </optgroup>
+              <optgroup label="Personal">
+                <option value="montaña">Cervezas</option>
+                <option value="montaña">Salir de fiesta</option>
+                <option value="montaña">Comida</option>
+              </optgroup>
+              <optgroup label="Planes">
+                <option value="carreras">Playa</option>
+                <option value="carreras">Montaña</option>
+                <option value="carreras">Deporte</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="div-contacto">
+            <textarea
+              name="sobre-ti"
+              rows="8"
+              cols="20"
+              placeholder="¿Quieres escribir mas sobre tu consulta?"
+            ></textarea>
+          </div>
+          <div class="boton-contacto">
+            <input class="boton-contacto" type="submit" />
+            <input class="boton-contacto" type="reset" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="container">
+      <ul class="enlaces-footer">
+        <a
+          href="https://www.linkedin.com/in/manuel-romero-arroyo-320b7220a/"
+          target="_blank"
+          >Linkedin</a
+        >
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+      </ul>
+      <p class="enlaces-footer">
+        C/Giralda 77, 41011, Sevilla<br />
+        Tel:658987214<br />
+        Mail: mra@gmail.com
+      </p>
     </footer>
-</body>
+  </body>
 </html>
